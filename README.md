@@ -1,5 +1,5 @@
 # Case-Study-4-DATA-BANK
-## Intrduction
+## Introduction
 Data Bank operates at the intersection of digital banking and cloud data storage. Unlike traditional financial institutions, Data Bank ties each customer's cloud storage allocation directly to their account balance; the more money a customer holds, the more storage they are entitled to.
 While this model is innovative, it creates a forecasting challenge that the business has not yet solved.
 
@@ -15,4 +15,7 @@ The core questions the business needs answered are:
 
 ## Objectives
 The objective of this analysis is to move Data Bank from reactive infrastructure planning to data-driven forecasting, giving the management team the metrics, trends, and projections they need to make confident decisions about growth, resource allocation, and long-term platform development.
+
+## Entity Relationship Diagram
+
 
