@@ -18,3 +18,8 @@ The objective of this analysis is to move Data Bank from reactive infrastructure
 
 ## Entity Relationship Diagram
 ![image alt](https://github.com/TemitopeHassan-Analyst/Case-Study-4-DATA-BANK/blob/122453ff7d0c6e6be6d2889f9ed46fa914c356e4/Screenshot%202026-04-02%20002628.png)
+
+Table 1: regions
+This regions table contains the region_id and their respective region_name values.
+
+
