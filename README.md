@@ -17,4 +17,4 @@ The core questions the business needs answered are:
 The objective of this analysis is to move Data Bank from reactive infrastructure planning to data-driven forecasting, giving the management team the metrics, trends, and projections they need to make confident decisions about growth, resource allocation, and long-term platform development.
 
 ## Entity Relationship Diagram
-Screenshot 2026-04-02 002628.png
+![image alt][https://github.com/TemitopeHassan-Analyst/Case-Study-4-DATA-BANK/blob/122453ff7d0c6e6be6d2889f9ed46fa914c356e4/Screenshot%202026-04-02%20002628.png]
