@@ -94,3 +94,32 @@ ORDER BY customer_count DESC;
 | Africa      | 102            |
 | Asia        | 95             |
 | Europe      | 88             |
+
+4. How many days on average are customers reallocated to a different node?
+```
+WITH node_days AS (
+  SELECT
+    customer_id,
+    node_id,
+    DATEDIFF(DAY, start_date, end_date) AS days_in_node
+  FROM data_bank.dbo.customer_nodes
+  WHERE end_date != '9999-12-31'
+  GROUP BY customer_id, node_id, start_date, end_date
+),
+total_node_days AS (
+  SELECT
+    customer_id,
+    node_id,
+    SUM(days_in_node) AS total_days_in_node
+  FROM node_days
+  GROUP BY customer_id, node_id
+)
+SELECT
+  ROUND(AVG(CAST(total_days_in_node AS FLOAT)), 0) AS avg_node_reallocation_days
+FROM total_node_days;
+```
+
+| metric                      | value |
+|-----------------------------|-------|
+| avg_node_reallocation_days  | 24    |
+
