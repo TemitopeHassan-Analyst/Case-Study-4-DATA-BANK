@@ -73,3 +73,24 @@ GROUP BY r.region_name;
 | Asia        | 5          |
 | Europe      | 5          |
 | Oceania     | 5          |
+
+3. How many customers are allocated to each region
+
+```
+SELECT
+  r.region_name,
+  COUNT(DISTINCT cn.customer_id) AS customer_count
+FROM regions AS r
+JOIN customer_nodes AS cn
+  ON r.region_id = cn.region_id
+GROUP BY r.region_name
+ORDER BY customer_count DESC;
+```
+
+| region_name | customer_count |
+|-------------|----------------|
+| Australia   | 110            |
+| America     | 105            |
+| Africa      | 102            |
+| Asia        | 95             |
+| Europe      | 88             |
