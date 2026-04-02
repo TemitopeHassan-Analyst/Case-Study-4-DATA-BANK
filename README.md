@@ -24,10 +24,14 @@ Table 1: regions
 This regions table contains the region_id and their respective region_name values.
 
 ![image alt](https://github.com/TemitopeHassan-Analyst/Case-Study-4-DATA-BANK/blob/db478add1afaca4c7c27d9a940b08bbcdb1e9878/Screenshot%202026-04-02%20004405.png)
+Table 2: customer_nodes
 
-Table 3: Customer Transactions
-This table stores all customer deposits, withdrawals and purchases made using their Data Bank debit card.
+Customers are randomly distributed across the nodes according to their region. This random distribution changes frequently to reduce the risk of hackers getting into Data Bank’s system and stealing customer’s money and data!
 
 ![image alt](https://github.com/TemitopeHassan-Analyst/Case-Study-4-DATA-BANK/blob/1bdddfcada2d61cfe156679cf335e30747ac3f5e/Screenshot%202026-04-02%20004439.png)
+
+Table 3: Customer Transactions
+
+This table stores all customer deposits, withdrawals and purchases made using their Data Bank debit card.
 
 ![image alt](https://github.com/TemitopeHassan-Analyst/Case-Study-4-DATA-BANK/blob/29fd9f84b8ee03656bc76788c389335cdc5a4e1e/Screenshot%202026-04-02%20004516.png)
