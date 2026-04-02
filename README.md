@@ -41,3 +41,17 @@ Table 3: Customer Transactions
 This table stores all customer deposits, withdrawals and purchases made using their Data Bank debit card.
 
 ![image alt](https://github.com/TemitopeHassan-Analyst/Case-Study-4-DATA-BANK/blob/29fd9f84b8ee03656bc76788c389335cdc5a4e1e/Screenshot%202026-04-02%20004516.png)
+
+### Questions and Solutions
+
+Customer Nodes Exploration
+
+1. How many unique nodes are there on the Data Bank system?
+```
+SELECT COUNT(DISTINCT node_id) AS unique_nodes
+FROM customer_nodes;
+```
+
+| metric        | value |
+|---------------|-------|
+| unique_nodes  | 5     |
