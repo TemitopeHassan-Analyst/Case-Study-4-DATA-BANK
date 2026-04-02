@@ -21,5 +21,5 @@ The objective of this analysis is to move Data Bank from reactive infrastructure
 
 Table 1: regions
 This regions table contains the region_id and their respective region_name values.
-
+![image alt](https://github.com/TemitopeHassan-Analyst/Case-Study-4-DATA-BANK/blob/db478add1afaca4c7c27d9a940b08bbcdb1e9878/Screenshot%202026-04-02%20004405.png)
 
