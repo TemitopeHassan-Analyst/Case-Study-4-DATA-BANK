@@ -55,3 +55,21 @@ FROM customer_nodes;
 | metric        | value |
 |---------------|-------|
 | unique_nodes  | 5     |
+
+2. What is the number of nodes per region?
+```
+SELECT
+  r.region_name,
+  COUNT(DISTINCT cn.node_id) AS node_count
+FROM regions AS r
+JOIN customer_nodes AS cn
+  ON r.region_id = cn.region_id
+GROUP BY r.region_name;
+```
+| region_name | node_count |
+|-------------|------------|
+| Africa      | 5          |
+| America     | 5          |
+| Asia        | 5          |
+| Europe      | 5          |
+| Oceania     | 5          |
