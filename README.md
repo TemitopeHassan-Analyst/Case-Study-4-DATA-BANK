@@ -17,6 +17,11 @@ The core questions the business needs answered are:
 The objective of this analysis is to move Data Bank from reactive infrastructure planning to data-driven forecasting, giving the management team the metrics, trends, and projections they need to make confident decisions about growth, resource allocation, and long-term platform development.
 
 ## Entity Relationship Diagram
+The three datasets for this case study include:
+Regions
+Customer nodes
+Customer transactions
+
 ![image alt](https://github.com/TemitopeHassan-Analyst/Case-Study-4-DATA-BANK/blob/122453ff7d0c6e6be6d2889f9ed46fa914c356e4/Screenshot%202026-04-02%20002628.png)
 
 Table 1: regions
@@ -24,6 +29,7 @@ Table 1: regions
 This regions table contains the region_id and their respective region_name values.
 
 ![image alt](https://github.com/TemitopeHassan-Analyst/Case-Study-4-DATA-BANK/blob/db478add1afaca4c7c27d9a940b08bbcdb1e9878/Screenshot%202026-04-02%20004405.png)
+
 Table 2: customer_nodes
 
 Customers are randomly distributed across the nodes according to their region. This random distribution changes frequently to reduce the risk of hackers getting into Data Bank’s system and stealing customer’s money and data!
