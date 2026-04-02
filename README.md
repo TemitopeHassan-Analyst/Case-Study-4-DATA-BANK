@@ -44,7 +44,7 @@ This table stores all customer deposits, withdrawals and purchases made using th
 
 ### Questions and Solutions
 
-Customer Nodes Exploration
+A. Customer Nodes Exploration
 
 1. How many unique nodes are there on the Data Bank system?
 ```
@@ -123,3 +123,20 @@ FROM total_node_days;
 |-----------------------------|-------|
 | avg_node_reallocation_days  | 24    |
 
+B. Customer Transactions
+
+1. What is the unique count and total amount for each transaction type?
+```
+SELECT
+  txn_type,
+  COUNT(*) AS transaction_count,
+  SUM(txn_amount) AS transaction_amount
+FROM customer_transactions
+GROUP BY txn_type;
+```
+
+| txn_type   | transaction_count | transaction_amount |
+|------------|-------------------|--------------------|
+| deposit    | 2671              | 1,359,168          |
+| purchase   | 1617              | 806,537            |
+| withdrawal | 1580              | 793,003            |
