@@ -193,3 +193,28 @@ ORDER BY mth;
 | 3   | 192            |
 | 4   | 70             |
 
+8. What is the closing balance for each customer at the end of the month? Also show the change in balance each month in the same table output.
+```
+WITH monthly_data AS (
+    SELECT 
+        customer_id,
+        EOMONTH(txn_date) AS month_end,
+        SUM(CASE 
+            WHEN txn_type IN ('withdrawal', 'purchase') THEN -txn_amount
+            ELSE txn_amount 
+        END) AS monthly_change
+    FROM data_bank.dbo.customer_transactions
+    GROUP BY customer_id, EOMONTH(txn_date)
+)
+
+SELECT 
+    customer_id,
+    month_end,
+    monthly_change,
+    SUM(monthly_change) OVER (
+        PARTITION BY customer_id 
+        ORDER BY month_end
+    ) AS ending_balance
+FROM monthly_data
+ORDER BY customer_id, month_end;
+```
