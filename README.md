@@ -220,3 +220,42 @@ ORDER BY customer_id, month_end;
 ```
 
 ![image alt](https://github.com/TemitopeHassan-Analyst/Case-Study-4-DATA-BANK/blob/bceeaf62c34511aba581f3c177d93bad6f3f50fd/Screenshot%202026-04-02%20181740.png)
+
+### Key Insights
+
+1. Customer balance behavior is uneven
+- A small group of customers usually holds a large portion of the total balances
+- Many customers maintain low or near-zero balances
+- Customer balances directly impact storage allocation
+
+2. Cash flow volatility across months
+- Some customers show large swings in monthly inflows and outflows
+- Others remain stable with consistent deposits or withdrawals
+
+3. Dormant or low-activity accounts exist
+- A portion of customers show no transactions in certain months
+- These accounts contribute little to revenue or engagement
+Indicates possible inactivity or churn risk
+
+4. Customer contribution is not equal
+- A few customers consistently generate high positive balance growth
+- Many contribute minimally or fluctuate around zero
+Shows the need for customer segmentation
+
+5. Net monthly balance changes vary significantly
+- Some months show net inflow dominance (growth months)
+- Others show net outflow dominance (decline months)
+- Suggests seasonal or behavioral patterns in customer spending
+
+### Recommendations
+
+1. Segment customers for targeted strategy, which helps tailor marketing and retention strategies.
+
+2. Retain high-value customers by offering loyalty benefits or lower fees
+
+3. Reactivate dormant accounts
+
+4. Improve cash flow stability
+
+5. Monitor monthly balance trends by building dashboards tracking Net inflow/outflow per month
+
