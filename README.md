@@ -27,3 +27,4 @@ This regions table contains the region_id and their respective region_name value
 
 ![image alt](https://github.com/TemitopeHassan-Analyst/Case-Study-4-DATA-BANK/blob/1bdddfcada2d61cfe156679cf335e30747ac3f5e/Screenshot%202026-04-02%20004439.png)
 
+![image alt](https://github.com/TemitopeHassan-Analyst/Case-Study-4-DATA-BANK/blob/29fd9f84b8ee03656bc76788c389335cdc5a4e1e/Screenshot%202026-04-02%20004516.png)
