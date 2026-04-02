@@ -140,3 +140,25 @@ GROUP BY txn_type;
 | deposit    | 2671              | 1,359,168          |
 | purchase   | 1617              | 806,537            |
 | withdrawal | 1580              | 793,003            |
+
+2. What is the average total historical deposit count and amounts for all customers?
+```
+WITH deposits AS (
+  SELECT
+    customer_id,
+    COUNT(customer_id) AS txn_count,
+    AVG(CAST(txn_amount AS FLOAT)) AS avg_amount
+  FROM data_bank.dbo.customer_transactions
+  WHERE txn_type = 'deposit'
+  GROUP BY customer_id
+)
+SELECT
+  ROUND(AVG(CAST(txn_count AS FLOAT)), 0) AS avg_deposit_count,
+  ROUND(AVG(avg_amount), 0) AS avg_deposit_amt
+FROM deposits;
+```
+
+| metric             | value   |
+|--------------------|---------|
+| avg_deposit_count  | 5       |
+| avg_deposit_amt    | 509     |
