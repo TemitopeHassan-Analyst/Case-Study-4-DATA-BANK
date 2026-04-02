@@ -148,7 +148,7 @@ WITH deposits AS (
     customer_id,
     COUNT(customer_id) AS txn_count,
     AVG(CAST(txn_amount AS FLOAT)) AS avg_amount
-  FROM data_bank.dbo.customer_transactions
+  FROM customer_transactions
   WHERE txn_type = 'deposit'
   GROUP BY customer_id
 )
@@ -156,6 +156,7 @@ SELECT
   ROUND(AVG(CAST(txn_count AS FLOAT)), 0) AS avg_deposit_count,
   ROUND(AVG(avg_amount), 0) AS avg_deposit_amt
 FROM deposits;
+
 ```
 
 | metric             | value   |
