@@ -218,3 +218,5 @@ SELECT
 FROM monthly_data
 ORDER BY customer_id, month_end;
 ```
+
+![image alt](https://github.com/TemitopeHassan-Analyst/Case-Study-4-DATA-BANK/blob/bceeaf62c34511aba581f3c177d93bad6f3f50fd/Screenshot%202026-04-02%20181740.png)
